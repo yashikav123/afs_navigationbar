@@ -1,0 +1,44 @@
+.full-screen-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.glass-card {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px) brightness(0.9);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.glass-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.glass-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
