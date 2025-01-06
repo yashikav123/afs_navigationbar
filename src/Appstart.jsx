@@ -11,7 +11,7 @@ const Appstart = () => {
                 <Routes>
                     <Route path="/" element={<User />} />
                     <Route path="/createuser" element={<CreateUser />} />
-                    <Route path="/updateuser" element={<UpdateUser />} />
+                    <Route path="/updateuser/:id" element={<UpdateUser />} />
                 </Routes>
             </BrowserRouter>
         </div>

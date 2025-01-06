@@ -5,7 +5,6 @@ import axios from 'axios';
 const User=()=>
 {
  const[user1,setUser]=useState([
-    {name:"Yashia",email:"yashia@123",address:"ramnad"}
  ]);
  useEffect(() => {
     axios
@@ -39,7 +38,7 @@ const User=()=>
                             <td>{users.email}</td>
                             <td>{users.address}</td>
                             <td>
-                                <Link to='updateuser'>Update</Link>
+                                <Link to={`/update/${users._id}`}>Update</Link>
                                 <button>Delete</button>
                             </td>
                         </tr>

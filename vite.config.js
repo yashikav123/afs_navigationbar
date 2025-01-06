@@ -5,12 +5,15 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
+    // Customize build options if necessary
     rollupOptions: {
+      // Handle any warnings that might occur during the build
       onwarn(warning, warn) {
         if (warning.code === 'UNRESOLVED_IMPORT') return;
         warn(warning);
       },
-      external: ['react-router-dom'], // Adding react-router-dom as an external dependency
     },
   },
 })
+// npm run build
+// npm run preview
