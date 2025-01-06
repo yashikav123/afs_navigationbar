@@ -15,7 +15,7 @@ const UpdateUser = () => {
         e.preventDefault();  
         
         
-        axios.put('http://localhost:3000/api/user/update/${id}', { name, email, address })
+        axios.put('https://backenddemo-wklm.onrender.com/api/user/update/${id}', { name, email, address })
             .then((result) => {
                
                 navigate('/');  

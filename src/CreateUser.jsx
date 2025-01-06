@@ -8,7 +8,7 @@ const CreateUser = () => {
     const Navigate = useNavigate();
     const submit = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:3000/api/user/createss", { name, email, address })
+        axios.post("https://backenddemo-wklm.onrender.com/api/user/createss", { name, email, address })
             .then(result => {
                 console.log(result.data);
                 Navigate('/');

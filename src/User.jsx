@@ -9,7 +9,7 @@ const User=()=>
  ]);
  useEffect(() => {
     axios
-    .get("http://localhost:3000/api/user/createUser")
+    .get("https://backenddemo-wklm.onrender.com/api/user/createUser")
     .then((res)=>
     {   console.log(res.data);
         setUser(res.data.users);
