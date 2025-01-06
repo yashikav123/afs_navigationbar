@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
+import './CreateUser.css';
 const CreateUser = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -19,7 +20,7 @@ const CreateUser = () => {
     };
 
     return (
-        <div>
+        <div className="create-user">
             <h1>Create User</h1>
             <form onSubmit={submit}>
                 <label>Name</label>
