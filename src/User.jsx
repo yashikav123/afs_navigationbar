@@ -26,6 +26,7 @@ const User=()=>
             <th>name</th>
             <th>email</th>
             <th>address</th>
+            <th>action</th>
             </tr>
             
             

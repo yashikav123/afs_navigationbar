@@ -1,39 +1,89 @@
-.create-user {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+/* Reset body and html to fill the viewport */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Center the form and its container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: #f9f9f9;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
+.create-user {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
 }
 
-input {
+.create-user h1 {
+    margin-bottom: 20px;
+}
+
+.create-user form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-user label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
 }
 
-button {
+.create-user input {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-user button {
     padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    background-color: #007bff;
+    background-color: #007BFF;
     color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-button:hover {
+.create-user button:hover {
     background-color: #0056b3;
 }
 
+/* Error message styling */
 .error-message {
     color: red;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Styling for table if you are adding rows */
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #e81919;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Apply alternating colors to table rows */
+table tr:nth-child(even) {
+    background-color: #c5c189;
 }
